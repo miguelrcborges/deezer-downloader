@@ -3,6 +3,7 @@
 :root {
   --bg: #1e1e2e;
   --fg: #cdd6f4;
+  --darkerbg: #11111b;
 
   --primary: #a6e4a1;
   --secondary: #89b4f4;
@@ -75,4 +76,30 @@ button.third:hover {
 
 .flex-grow {
   flex-grow: 1;
+}
+
+#results {
+  margin: 6rem 0;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.result {
+  background-color: var(--darkerbg);
+  padding: 1rem 2rem;
+  border-radius: 3rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.download-box > button {
+  padding: 1rem;
+  border-radius: 1rem;
+}
+
+.download-box {
+  display: flex;
+  gap: 1rem;
 }
