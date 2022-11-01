@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+  --bg: #1e1e2e;
+  --fg: #cdd6f4;
+
+  --primary: #a6e4a1;
+  --secondary: #89b4f4;
+  --third: #f38ba8;
+
+  font-size: 62.5%;
+}
+
+body {
+  color: var(--fg);
+  background-color: var(--bg);
+  font-family: 'Poppins', sans-serif;
+  width: min(85vw, 800px);
+  margin: min(10vh, 200px) auto;
+  font-size: 1.6rem;
+}
+
+h1 {
+  font-size: 7.5rem;
+  line-height: 6.5rem;
+  color: var(--primary);
+}
+
+input {
+  background-color: var(--bg);
+  color: var(--fg);
+  border: solid 2px var(--primary);
+  border-radius: 2rem;
+  font-size: 1.6rem;
+  padding: 2rem;
+}
+
+button {
+  padding: 2rem;
+  background-color: var(--bg);
+  font-weight: bold;
+  border: none;
+  border-radius: 2rem;
+  transition: 200ms;
+}
+
+button.secondary {
+  border: solid 2px var(--secondary);
+  color: var(--secondary);
+}
+
+button.secondary:hover {
+  background-color: var(--secondary);
+  color: var(--bg);
+}
+
+button.third {
+  border: solid 2px var(--third);
+  color: var(--third);
+}
+
+button.third:hover {
+  background-color: var(--third);
+  color: var(--bg);
+}
+
+.inputs {
+  display: flex;
+  gap: 1rem;
+}
+
+.flex-grow {
+  flex-grow: 1;
+}
