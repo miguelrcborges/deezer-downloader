@@ -26,6 +26,10 @@ h1 {
   color: var(--primary);
 }
 
+a:link, a:visited, a:hover, a:active {
+  color: var(--third);
+}
+
 input {
   background-color: var(--bg);
   color: var(--fg);
